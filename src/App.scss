@@ -124,7 +124,7 @@ body {
       border-top: 5px solid $slate4;
     }
   }
-  .error {
+  #errorModal {
     background-color: $strawberry6;
     border-left: 4px solid $strawberry2;
     color: $slate3;
@@ -154,6 +154,13 @@ body {
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+  #loader {
+    img {
+      height: 50%;
+      display: block;
+      margin: auto;
     }
   }
 }

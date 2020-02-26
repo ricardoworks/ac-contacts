@@ -29,7 +29,7 @@ function ContactTable(props) {
           // Data is missing: total value, location deals, and tags
           // Putting placeholder data for now
           return (
-            <tr key={`${index}-${new Date().getTime()}`}>
+            <tr className="contacts" key={`${index}-${new Date().getTime()}`}>
               <td>
                 <input type="checkbox" />
               </td>
