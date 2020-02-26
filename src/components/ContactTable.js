@@ -18,6 +18,7 @@ function ContactTable(props) {
           <th>Location</th>
           <th>Deals</th>
           <th>Tags</th>
+          <th>&#9642;&#9642;&#9642;</th>
         </tr>
       </thead>
       <tbody>
@@ -39,10 +40,11 @@ function ContactTable(props) {
                   <a href="/#">{`${firstName} ${lastName}`}</a>
                 </div>
               </td>
-              <td>$00,000</td>
+              <td>$00,000 &#x2191;</td>
               <td>Chicago, IL, USA</td>
               <td>2</td>
               <td>customer, new deals</td>
+              <td />
             </tr>
           );
         })}

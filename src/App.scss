@@ -48,6 +48,13 @@ body {
       :nth-child(5) {
         text-align: center;
       }
+      :nth-child(7) {
+        text-align: center;
+        color: $slate1;
+        &:hover {
+          cursor: pointer;
+        }
+      }
       th {
         height: 28px;
         color: $slate4;
