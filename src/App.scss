@@ -1,0 +1,159 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+
+/*Color Variables*/
+$slate1: #1e2029;
+$slate3: #4d5468;
+$slate4: #5f667e;
+$slate7: #e4e7f0;
+$ocean3: #5884ea;
+$ocean6: #fafbff;
+$lavendar5: #eae0fe;
+$strawberry2: #f3376b;
+$strawberry6: #fff2f6;
+$white: #ffffff;
+
+/*Size Variables*/
+$borderSize: 2px;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  font-family: "Fira Sans", sans-serif;
+  height: 100%;
+  min-height: 100%;
+  background-color: $white;
+  color: $slate1;
+  font-size: 14px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  table#contactTable {
+    border: solid $borderSize $slate7;
+    border-spacing: 0px;
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+      border-bottom: solid $borderSize $slate7;
+      :nth-child(5) {
+        text-align: center;
+      }
+      th {
+        height: 28px;
+        color: $slate4;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: left;
+        #totalValueText,
+        .triangleDown {
+          float: left;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .triangleDown {
+          margin-top: 4px;
+          margin-left: 4px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        width: 100%;
+        align-items: center;
+        &:nth-child(even) {
+          background-color: $ocean6;
+        }
+      }
+      td {
+        height: 46px;
+        &:first-child {
+          width: 36px;
+        }
+        &:nth-child(5) {
+          text-align: center;
+        }
+      }
+    }
+
+    .userIcon {
+      background-color: $lavendar5;
+      border-radius: 100%;
+      width: 16px;
+      height: 16px;
+      float: left;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+      overflow: hidden;
+    }
+    .userName {
+      float: left;
+      line-height: 16px;
+      padding-left: 12px;
+    }
+
+    input[type="checkbox"] {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    a {
+      color: $ocean3;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .triangleDown {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid $slate4;
+    }
+  }
+  .error {
+    background-color: $strawberry6;
+    border-left: 4px solid $strawberry2;
+    color: $slate3;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: table;
+    .errorIcon {
+      background-color: $slate3;
+      border-radius: 100%;
+      width: 16px;
+      height: 16px;
+      color: $strawberry6;
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+      margin-left: 12px;
+      float: left;
+    }
+    .errorText {
+      margin-left: 12px;
+      float: left;
+    }
+    .errorClose {
+      float: right;
+      margin-right: 12px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
